@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="IModel" Category="Model" Annotations="Relational:MaxIdentifierLength: 128 SqlServer:ValueGenerationStrategy: IdentityColumn" Bounds="-622.103887532552,-387.840903901673,630.710872650146,446.069114537049" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" Label="OnlineUniversityDbContext" ProductVersion="3.1.9" PropertyAccessMode="PropertyAccessMode.Default" UseManualLocation="True" />
+    <Node Id="Lecturer" Category="EntityType" Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding Relational:TableName: Lecturers" BaseClass="" Bounds="-563.816657307943,-343.840833032227,190.966748250326,197.880419421387" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Lecturer" Name="Lecturer" UseManualLocation="True" />
+    <Node Id="Lecturer.Age" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-463.816558837891,-303.840702514648,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Age" MaxLength="None" Name="Age" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Lecturer.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-543.816528320313,-303.840733032227,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Lecturer.Name" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-543.81665608724,-247.880657653809,51.6966666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Name" MaxLength="None" Name="Name" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Lecturer.Subject" Category="Navigation Property" Bounds="-543.816657307943,-191.92051361084,76.0066666666667,25.96" Dependent="" Field="" Inverse="Lecturer" Label="Subject (1)" Name="Subject" Principal="Subject" PropertyAccessMode="PropertyAccessMode.Default" Type="Subject" />
+    <Node Id="Lecturer.SubjectId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-462.119909057617,-247.88062713623,69.27,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="SubjectId" MaxLength="None" Name="SubjectId" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Mark" Category="EntityType" Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding" BaseClass="" Bounds="-243.961713562012,-347.840803901673,210.573528086344,141.920307283021" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Mark" Name="Mark" UseManualLocation="True" />
+    <Node Id="Mark.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-223.961669921875,-307.840702514648,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Mark.StudentId" Category="Property Foreign" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-124.691518809001,-251.880596618652,71.3033333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="StudentId" MaxLength="None" Name="StudentId" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Mark.SubjectId" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-223.961713562012,-251.880596618652,69.27,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="SubjectId" MaxLength="None" Name="SubjectId" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Mark.Value" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-143.961654663086,-307.840702514648,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Value" MaxLength="None" Name="Value" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Student" Category="EntityType" Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding Relational:TableName: Students" BaseClass="" Bounds="-261.339850896218,-122.046220147705,249.946836013813,141.920329130554" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Student" Name="Student" UseManualLocation="True" />
+    <Node Id="Student.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-241.339813232422,-82.0461201477051,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Student.Marks" Category="Navigation Collection" Bounds="-241.339656778971,-26.0859951782227,67.6433333333333,25.96" Dependent="Mark" Field="" Inverse="" Label="Marks (*)" Name="Marks" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="ICollection&lt;Mark&gt;" />
+    <Node Id="Student.MatriculationYear" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-143.696348215739,-26.0859951782227,112.303333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="MatriculationYear" MaxLength="None" Name="MatriculationYear" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Student.Name" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-161.339994405111,-82.046089630127,51.6966666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Name" MaxLength="None" Name="Name" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="Subject" Category="EntityType" Annotations="" BaseClass="" Bounds="-602.103887532552,-103.692239129639,263.370455322266,141.920349765015" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="Subject" Name="Subject" UseManualLocation="True" />
+    <Node Id="Subject.Id" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-582.103576660156,-63.6921086120606,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Id" MaxLength="None" Name="Id" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="Subject.Lecturer" Category="Navigation Property" Bounds="-582.103887532552,-7.73199127197266,79.9466666666667,25.96" Dependent="Lecturer" Field="" Inverse="Subject" Label="Lecturer (1)" Name="Lecturer" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="Lecturer" />
+    <Node Id="Subject.NumberOfCredits" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-472.15676554362,-7.73202178955078,113.423333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="NumberOfCredits" MaxLength="None" Name="NumberOfCredits" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="Subject.Title" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="-502.103576660156,-63.6921391296387,50,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Title" MaxLength="None" Name="Title" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+  </Nodes>
+  <Links>
+    <Link Source="IModel" Target="Lecturer" Category="Contains" />
+    <Link Source="IModel" Target="Mark" Category="Contains" />
+    <Link Source="IModel" Target="Student" Category="Contains" />
+    <Link Source="IModel" Target="Subject" Category="Contains" />
+    <Link Source="Lecturer" Target="Lecturer.Age" Category="Contains" />
+    <Link Source="Lecturer" Target="Lecturer.Id" Category="Contains" />
+    <Link Source="Lecturer" Target="Lecturer.Name" Category="Contains" />
+    <Link Source="Lecturer" Target="Lecturer.Subject" Category="Contains" />
+    <Link Source="Lecturer" Target="Lecturer.SubjectId" Category="Contains" />
+    <Link Source="Lecturer" Target="Subject" Category="Foreign Key" Annotations="" Bounds="-469.632746167065,-145.96041361084,0.326992756840184,33.2686091795829" From="Lecturer.SubjectId" IsUnique="True" Label="1:1" LabelBounds="-465.469249783979,-137.286452235194,15.54,15.9599999999999" Name="Lecturer -&gt; Subject" To="Subject.Id" />
+    <Link Source="Mark" Target="Mark.Id" Category="Contains" />
+    <Link Source="Mark" Target="Mark.StudentId" Category="Contains" />
+    <Link Source="Mark" Target="Mark.SubjectId" Category="Contains" />
+    <Link Source="Mark" Target="Mark.Value" Category="Contains" />
+    <Link Source="Mark" Target="Student" Category="Foreign Key" Annotations="" Bounds="-137.949455204199,-205.920496618652,0.765516988593731,74.8747468168883" From="Mark.StudentId" IsUnique="False" Label="1:*" LabelBounds="-133.566696704439,-176.483570076868,14.0733333333334,15.96" Name="Mark -&gt; Student" To="Student.Id" />
+    <Link Source="Student" Target="Student.Id" Category="Contains" />
+    <Link Source="Student" Target="Student.Marks" Category="Contains" />
+    <Link Source="Student" Target="Student.MatriculationYear" Category="Contains" />
+    <Link Source="Student" Target="Student.Name" Category="Contains" />
+    <Link Source="Subject" Target="Subject.Id" Category="Contains" />
+    <Link Source="Subject" Target="Subject.Lecturer" Category="Contains" />
+    <Link Source="Subject" Target="Subject.NumberOfCredits" Category="Contains" />
+    <Link Source="Subject" Target="Subject.Title" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="EntityType" />
+    <Category Id="Foreign Key" />
+    <Category Id="Model" />
+    <Category Id="Navigation Collection" />
+    <Category Id="Navigation Property" />
+    <Category Id="Property Foreign" />
+    <Category Id="Property Optional" />
+    <Category Id="Property Primary" />
+    <Category Id="Property Required" />
+  </Categories>
+  <Properties>
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass" Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Field" Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsAbstract" Label="IsAbstract" Description="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="MaxLength" DataType="System.String" />
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type" Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>
